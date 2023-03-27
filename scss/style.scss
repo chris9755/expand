@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #777;
+    min-height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+.panels{
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    // width: 90%;
+    // flex: 0 0 90%;
+}
+.panel-1{
+    flex: 0 0 30%;
+}
+.panel-2{
+    flex: 0 0 30%;
+}
+.panel-3{
+    flex: 0 0 30%;
+}
+.panel{
+    position: relative;
+    background-image: url('https://tapety.tja.pl/obrazki/tja_normalne/64624.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    cursor: pointer;
+    // flex: 0 0 1;
+    transition: 0.8s;
+
+    
+}
+.panel-text{
+    // position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 30px;
+    color: white;
+    // z-index: 10;
+}
+.panel-bg{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.panel-1:hover{
+    flex:1 0 80%;
+    & .panel-bg{
+        background-color: rgba(0, 0, 0, 0.3);
+
+    }
+}
+.panel-2:hover{
+    flex:1 0 80%;
+    & .panel-bg{
+        background-color: rgba(0, 0, 0, 0.3);
+
+    }
+}
+.panel-3:hover{
+    flex:1 0 80%;
+    & .panel-bg{
+        background-color: rgba(0, 0, 0, 0.3);
+
+    }
+}
+
